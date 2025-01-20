@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aksara Jawa Recognition</title>
+    <script src="https://cdn.jsdelivr.net/npm/onnxruntime-web/dist/ort.min.js"></script>
+    <script src="app.js" defer></script>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin: 20px;
+      }
+      canvas {
+        border: 1px solid black;
+      }
+      #output {
+        margin-top: 20px;
+        font-size: 1.2em;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Aksara Jawa Recognition</h1>
+    <canvas id="canvas" width="128" height="128"></canvas>
+    <br />
+    <button id="predict-btn">Recognize</button>
+    <div id="output">Result: <span id="result">N/A</span></div>
+  </body>
+</html>
